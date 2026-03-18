@@ -24,6 +24,14 @@ draw = function(){
    }
 
   display();
+
+  for(var i = 0; i < planetXPos.length; i++){
+    if(dist(mouseX - 5, mouseY - 5, planetXPos[i], planetYPos[i])<15){
+      planetXPos[i]=100;
+      planetYPos[i]=100;
+      planetFound++;
+    }
+  }
 }
 
 
