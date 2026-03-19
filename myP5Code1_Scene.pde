@@ -8,14 +8,21 @@ setup = function() {
 
 fill(255,255,255)
 textSize(15)
-
+//array
 var bread = ["Crossiants","Baguettes","Pretzles", "Bagles"];
+
+var price = ["$2.99","$3.50","$4.00","$2.99"];
+//for
+for(var priceNum = 0; priceNum < price.length; priceNum++){
+  text(price[priceNum], 280, 105+priceNum*80); 
+}
+
 
 for(var breadNum = 0; breadNum < bread.length; breadNum++){
   text(bread[breadNum], 70, 105+breadNum*80); 
 }
 
-
+//while
   var crossiantX = 60;
   textSize(30);
 
